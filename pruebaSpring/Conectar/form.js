@@ -1,4 +1,3 @@
-
 const registrar_tareas = async(name, surname, email, enabled) => {
     await axios({
         method: 'post',
@@ -9,7 +8,7 @@ const registrar_tareas = async(name, surname, email, enabled) => {
             surname,
             email,
             enabled,
-            
+
         }
     }).then((response) => {
         Swal.fire({
@@ -37,3 +36,5 @@ const obtenerDatos = () => {
     registrar_tareas(name, surname, email, enabled);
 
 }
+
+/*Prueba*/
