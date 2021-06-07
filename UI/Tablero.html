@@ -19,9 +19,42 @@
 </head>
 
 <body>
-    <table id="tablero" class="tablero" cellspacing="0">
+    <!--
+    <canvas id="table-container" class="canvas">
+        <table id="tablero" class="tablero" cellspacing="0"></table>
+    </canvas>
+-->
+    <table id="tablero" class="tablero" cellspacing="0"></table>
 
-    </table>
+    <div class="cnt-timer">
+        <h1>Tiempo</h1>
+        <p id="timer">x</p>
+    </div>
+
+    <div class="character-container">
+        <div class="cnt-characters">
+            <div>
+                <h1 id="title-characters">Personajes</h1>
+            </div>
+            <img src="Imagenes/Characters/ArqueroFront.png" alt="Arquero" id="img-arquero" class="img-character">
+            <img src="Imagenes/Characters/AsesinoFront.png" alt="Asesino" id="img-asesino" class="img-character">
+            <img src="Imagenes/Characters/BersequerFront.png" alt="Bersequer" id="img-bersequer" class="img-character">
+            <img src="Imagenes/Characters/EspadachinFront.png" alt="Espadachin" id="img-espadachin" class="img-character">
+            <img src="Imagenes/Characters/EspiaFront.png" alt="Espia" id="img-espia" class="img-character">
+            <img src="Imagenes/Characters/JineteFront.png" alt="Jinete" id="img-jinete" class="img-character">
+            <img src="Imagenes/Characters/MagoFront.png" alt="Mago" id="img-mago" class="img-character">
+        </div>
+    </div>
+    <div class="dado-container">
+        <div id="imagen-dado">
+        </div>
+        <button id="boton-dado">Tirar dado</button>
+    </div>
+
+    <div id="console">
+        Information console
+    </div>
+
 </body>
 <script type="text/javascript" src="Scripts/Tablero.js"></script>
 
